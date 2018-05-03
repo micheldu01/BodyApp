@@ -1,21 +1,26 @@
 package com.example.michel.bodyapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.facebook.login.LoginManager;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
 
@@ -25,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
     // DECLARE DRAWER LAYOUT
     @BindView(R.id.activity_main_drawer_layout)DrawerLayout drawerLayout;
+
+    // DECLARE NAVIGATION VIEW
+    @BindView(R.id.activity_main_nav_view)NavigationView navigationView;
 
 
 
@@ -43,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
         // ADD DRAWER LAYOUT
         this.configureDrawerLayout();
+
+        // ADD NAVIGATION VIEW
+        this.configureNavigationView();
 
 
 
@@ -94,7 +105,58 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
     }
 
+
+
+    //implement button DrawerLayout
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+
+        // 4 - Handle Navigation Item Click
+        int id = item.getItemId();
+
+        switch (id){
+
+            // ASK SETTING
+            case R.id.activity_main_drawer_settings:
+                Toast.makeText(this,"Il me reste à implementer le bouton setting", Toast.LENGTH_SHORT).show();
+                Log.e("MainActivity","SETTING ");
+
+                break;
+                // ASK LOGOUT
+            case R.id.activity_main_drawer_logout:
+                Toast.makeText(this,"Il me reste à implementer le bouton logout", Toast.LENGTH_SHORT).show();
+
+                break;
+
+                default:
+                    break;
+            }
+
+            this.drawerLayout.closeDrawer(GravityCompat.START);
+
+            return true;
+        }
+
+
+    // METHOD DRAWER LAYOUT OPEN CLOSE
+    @Override
+    public void onBackPressed() {
+        // 5 - Handle back click to close menu
+        if (this.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            this.drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+
+    // 3 - Configure NavigationView
+    private void configureNavigationView(){
+        navigationView.setNavigationItemSelectedListener(this);
+    }
+
 }
+
 
 
 
