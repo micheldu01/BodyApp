@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             // ASK SETTING
             case R.id.activity_main_drawer_training:
-                Toast.makeText(this,"Il me reste à implementer le bouton", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, TrainingActivity.class));
 
 
             // ASK SETTING
