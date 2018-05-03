@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+    <item
+        android:id="@+id/activity_main_drawer_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="SETTING" />
+
+    <item
+        android:id="@+id/activity_main_drawer_logout"
+        android:icon="@drawable/ic_power_settings_new_white_24dp"
+        android:title="LOGOUT" />
+
+
+</menu>
