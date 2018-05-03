@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "531469131145",
+    "firebase_url": "https://bodyapp-1cdec.firebaseio.com",
+    "project_id": "bodyapp-1cdec",
+    "storage_bucket": "bodyapp-1cdec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531469131145:android:d20ab52f9378a4ef",
+        "android_client_info": {
+          "package_name": "com.example.michel.bodyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531469131145-1reo8qcrmdr65v1smarducpkki8ph11j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHt80WTc1MPKF260ch-G7Ly2rtwGIsLk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
