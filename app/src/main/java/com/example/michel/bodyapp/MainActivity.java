@@ -117,9 +117,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id){
 
             // ASK SETTING
+            case R.id.activity_main_drawer_training:
+                Toast.makeText(this,"Il me reste à implementer le bouton", Toast.LENGTH_SHORT).show();
+
+
+            // ASK SETTING
             case R.id.activity_main_drawer_settings:
                 Toast.makeText(this,"Il me reste à implementer le bouton setting", Toast.LENGTH_SHORT).show();
-                Log.e("MainActivity","SETTING ");
 
                 break;
                 // ASK LOGOUT

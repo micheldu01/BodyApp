@@ -6,9 +6,9 @@
 
 
     <item
-        android:id="@+id/activity_main_drawer_bodybuilding"
-        android:icon="@drawable/ic_settings_white_24dp"
-        android:title="BODYBUILDING" />
+        android:id="@+id/activity_main_drawer_training"
+        android:icon="@drawable/ic_fitness_center_white_24dp"
+        android:title="TRAINING" />
 
     <item
         android:id="@+id/activity_main_drawer_settings"
